@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C/C++ 头文件参考</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>💻</text></svg>">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header class="navbar">
+        <div class="container">
+            <h1 class="logo">C/C++ 头文件参考</h1>
+            <nav class="nav-links">
+                <a href="#c-headers" class="nav-link">C 头文件</a>
+                <a href="#cpp-headers" class="nav-link">C++ 头文件</a>
+                <a href="#about" class="nav-link">关于</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 搜索区域 -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="搜索头文件或函数..." autocomplete="off">
+                <button id="search-btn">🔍</button>
+            </div>
+            <div class="search-results" id="search-results"></div>
+        </div>
+    </section>
+
+    <!-- 代码分析区域 -->
+    <section class="code-analysis-section">
+        <div class="container">
+            <h2 class="section-title">代码错误分析</h2>
+            <div class="code-analysis-container">
+                <div class="code-input-area">
+                    <div class="code-header">
+                        <h3>输入C/C++代码</h3>
+                        <div class="code-actions">
+                            <select id="code-language">
+                                <option value="c">C语言</option>
+                                <option value="cpp">C++</option>
+                            </select>
+                            <button id="analyze-btn">分析代码</button>
+                            <button id="clear-btn">清空</button>
+                        </div>
+                    </div>
+                    <textarea id="code-input" placeholder="在此输入您的C/C++代码..."></textarea>
+                </div>
+                <div class="code-results-area">
+                    <h3>分析结果</h3>
+                    <div id="analysis-results" class="analysis-results">
+                        <p class="placeholder">请输入代码并点击"分析代码"按钮开始分析</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 主内容区域 -->
+    <main class="main-content">
+        <div class="container">
+            <!-- C 头文件区域 -->
+            <section id="c-headers" class="header-section">
+                <h2 class="section-title">C 标准头文件</h2>
+                <div class="headers-grid" id="c-headers-grid"></div>
+            </section>
+
+            <!-- C++ 头文件区域 -->
+            <section id="cpp-headers" class="header-section">
+                <h2 class="section-title">C++ 标准头文件</h2>
+                <div class="headers-grid" id="cpp-headers-grid"></div>
+            </section>
+
+            <!-- 函数详情区域 -->
+            <section id="function-detail" class="detail-section">
+                <div class="detail-header">
+                    <h2 id="detail-title">函数详情</h2>
+                    <button id="close-detail" class="close-btn">×</button>
+                </div>
+                <div id="detail-content" class="detail-content"></div>
+            </section>
+        </div>
+    </main>
+
+    <!-- 关于区域 -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">关于</h2>
+            <p>这是一个简洁明了的 C/C++ 头文件和函数参考网站，旨在帮助开发者快速查阅标准库函数。</p>
+            <p>网站包含了常用的 C 和 C++ 标准头文件及其包含的函数信息。</p>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 C/C++ 头文件参考 | 设计简洁，使用方便</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript 文件 -->
+    <script src="data/headers-data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
